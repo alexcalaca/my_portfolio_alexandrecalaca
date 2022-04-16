@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+<h1> Portfolios <h1>
+<hr/>
+
+<table>
+	<thead>
+		<tr>
+			<th> Title </th>
+			<th> Subtitle </th>
+			<th> Body </th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @portfolio_itens.each do |portfolio_item| %>
+			<tr>
+				<td> <%= portfolio_item.title %> </td>
+				<td> <%= portfolio_item.subtitle %> </td>
+				<td> <%= portfolio_item.body %> </td>
+			</tr>
+		<% end %>
+		
+	</tbody>
+</table>
