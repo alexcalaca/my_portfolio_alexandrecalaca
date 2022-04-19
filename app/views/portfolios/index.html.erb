@@ -17,6 +17,7 @@
 				<td> <%= portfolio_item.title %> </td>
 				<td> <%= portfolio_item.subtitle %> </td>
 				<td> <%= portfolio_item.body %> </td>
+				<%= image_tag portfolio_item.thumb_image unless portfolio_item.thumb_image.nil? %>
 			</tr>
 		<% end %>
 		
